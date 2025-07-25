@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    float salary;
+    float tax;
+    
+printf("enter your salary(lpa):");
+scanf("%f",&salary);
+
+if(salary>=2.5 && salary<=5.0){
+    printf("pay tax of 5%");
+}else if(salary >5.0 && salary<=10.0){
+    printf("pay tax of 20%");
+}else if(salary>10.0){
+    printf("pay the tax of 30%");
+}else if(salary <2.5){
+    printf("no need to pay the tax!");
+}else{
+    printf("invalid credentials,try to write it with decimals");
+}
+
+return 0;
+}
